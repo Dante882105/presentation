@@ -1,0 +1,126 @@
+*{
+    color: beige;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+body{
+    background-color:rgb(2, 2, 2);
+    }
+
+header{
+    height: 400px; 
+    background-image: url(/Imagenes/Noche.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#hamburguer{
+    display: none;
+}
+
+header h1{
+    margin: 80px auto 0px auto;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+}
+
+header h1, p{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header #navegator ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header ul li{
+    text-align: center;
+    margin-top: 30px;
+}
+
+header ul a{
+    font-size: 18px;
+    color:rgb(218, 216, 216);
+    text-decoration: none;
+}
+
+.icon a{
+    font-size: 40px;
+}
+
+@media(max-width:425px){
+    h1, h2, h3{
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    header{
+        height: 200px; 
+        background-image: url(/Imagenes/Noche.jpg);
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    header h1{
+        font-family: 'Fjalla One', sans-serif;
+        font-family: 'Lobster', cursive;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .icon a{
+        font-size: 20px;
+    }
+
+    header #navegator .enlaces-menu{
+        list-style: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+    }
+
+    header #navegator ul li{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #hamburguer{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    header #navegator .enlaces-menu.activado{
+        display: flex;
+    }
+
+    @keyframes muestraMenu {
+        from{opacity: 0;}
+        to{opacity:1;}
+    }
+
+    .activo{
+        animation:muestraMenu 500ms ease-in-out both;
+        background-color: rgb(61, 59, 59);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        margin-top: -79px;
+        margin-left: -7px;
+    }
+}

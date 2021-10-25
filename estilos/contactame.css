@@ -1,0 +1,68 @@
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 40%;
+    height: 50%;
+    margin: 5% auto auto auto;
+}
+
+input{
+    color: black;
+}
+
+.nombre, .empresa, .telefono{
+    width: 120px;
+}
+
+.correo{
+    width: 240px;
+}
+
+.comentario{
+    height: 120px;
+    width: 450px;
+    color: black;
+}
+
+.boton1{
+    margin-left: 90%;
+    margin-top: 10px;
+    color: black;
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+}
+
+.boton1:hover{
+    background-color: rgb(58, 83, 16);
+    color: blanchedalmond;
+}
+
+@media(max-width: 425px) {
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 50%;
+        height: 50%;
+        /* margin: 5% auto 5% auto; */
+    }
+
+    .nombre, .empresa, .telefono{
+        width: 90%;
+    }
+
+    .comentario{
+        height: 120px;
+        width: 100%;
+        color: black;
+    }
+
+    .correo{
+        width: 100%;
+    }
+
+}
