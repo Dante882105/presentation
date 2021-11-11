@@ -24,9 +24,11 @@ header h1{
     font-family: 'Fjalla One', sans-serif;
     font-family: 'Lobster', cursive;
     font-size: 45px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-header h1, p{
+header>p{
     box-sizing: border-box;
     text-align: center;
 }
