@@ -1,31 +1,36 @@
+#contenedor{
+    background-color: rgba(15, 15, 15, 0.836);
+    background-size: 70% 80%;
+    width: 70%;
+    height: 780px;
+    margin: -15% 15% -12% 15%;
+    border-radius: 12px;
+    position:relative;
+    padding-top: 2%;
+}
 #formulario{
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
     width: 40%;
-    height: 50%;
-    margin: 5% auto auto auto;
+    height: 300px;
+    margin: 20% auto auto auto;
 }
-
 input{
     color: black;
 }
-
 .nombre, .empresa, .telefono{
     width: 120px;
 }
-
 .correo{
     width: 240px;
 }
-
 .comentario{
     height: 120px;
     width: 450px;
     color: black;
 }
-
 .boton1{
     margin-left: 90%;
     margin-top: 10px;
@@ -34,13 +39,21 @@ input{
     border-radius: 5px;
     border: none;
 }
-
 .boton1:hover{
     background-color: rgb(58, 83, 16);
     color: blanchedalmond;
 }
-
 @media(max-width: 425px) {
+    #contenedor{
+        background-color: rgba(15, 15, 15, 0.836);
+        background-size: 70% 80%;
+        width: 90%;
+        height: 780px;
+        margin: -20% 5% -8% 5%;
+        border-radius: 12px;
+        position:static;
+        padding-top: 2%;
+    }
     #formulario{
         display: flex;
         flex-direction: column;
@@ -48,21 +61,22 @@ input{
         box-sizing: border-box;
         width: 50%;
         height: 50%;
-        /* margin: 5% auto 5% auto; */
+        margin: 52% auto 5% auto;
     }
-
     .nombre, .empresa, .telefono{
         width: 90%;
     }
-
     .comentario{
         height: 120px;
         width: 100%;
         color: black;
     }
-
     .correo{
         width: 100%;
     }
 
+}
+.formulario__incorrecto>input{
+    color: red;
+    border: 1px solid darkred;
 }

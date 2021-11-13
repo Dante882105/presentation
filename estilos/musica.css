@@ -1,27 +1,32 @@
-#musica{
+#musica {
+    background-color: rgb(1, 1, 58);
+    position:static;
     box-sizing: border-box;
-    height: 200px;
-    width: 900px;
-    margin: 40px auto 0px 250px;
+    height: 250px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 2%;
+    margin-top: 2%;
 }
-
 #musica h3{
     text-align: center;
+    margin: 30px 17px;
 }
-
 #musica iframe{
-    height: 80px;
-    width: 250px;
-    margin: 12px;
+    height: 81px;
+    width: 30%;
+    margin: auto 1%
 }
-
 @media(max-width:425px){
-    
+    #musica iframe{
+        height: 81px;
+        width: 90%;
+        margin: 5px 5%
+    }    
     #musica, iframe, h3 {
         height: 100%;
         width: 95%;
     }
-    
     #musica{
         display: flex;
         flex-direction: column;
@@ -29,9 +34,7 @@
         margin: 2% 5%;
         padding: 0px;
     }
-
     #musica h3{
         text-align: center;
     }
-
 }

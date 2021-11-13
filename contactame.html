@@ -1,32 +1,41 @@
 <link rel="stylesheet" href="/estilos/contactame.css">
 <section id="formulario">
-    <h1>Formulario</h1>
-    <form action="codigo.php" method="post">
-        <label for="">¿Cuál es tu Nombre?</label>
-        <br>
-        <input class="nombre" type="text" name="nombre">
-        <br> <br>
-        <label for="">Si perteneces a una compañía, déjame el nombre de la misma.</label>
-        <br>
-        <input class="empresa" type="text" name="compañía">
-        <br> <br>
-        <label for="">Compárteme tu número de contacto.</label>
-        <br>
-        <input class="telefono" type="tel"
-        name="telefono">
-        <br><br>
-        <label for="">Déjame tu correo</label>
-        <br>
-        <input class="correo" type="email" name="correo">
-        <br><br>
+    <h1>Formulario de Contácto</h1>
+    <form action="codigo.php" method="post" id="form">
+        <div id="grupo__nombre">
+            <label for="">¿Cuál es tu Nombre?</label>
+            <br>
+            <input class="nombre" type="text" name="nombre" required>
+            <p class="msj1"></p>
+        </div>
+        <div id="grupo__empresa">
+            <label for="">Si perteneces a una compañía, déjame el nombre de la misma.</label>
+            <br>
+            <input class="empresa" type="text" name="empresa">
+            <p class="msj2"></p><br>
+        </div>
+        <div id="grupo__telefono">
+            <label for="">Compárteme tu número de contacto.</label>
+            <br>
+            <input class="telefono" type="tel"
+            name="telefono" required>
+            <p class="msj3"></p><br>
+        </div>
+        <div id="grupo__correo">
+            <label for="">Déjame tu correo</label>
+            <br>
+            <input class="correo" type="email" name="correo" required>
+            <p class="msj4"></p><br>
+        </div>
         <label for="">Si deseas conocer o preguntar algo, éste es tu espacio.</label>
         <br>
-        <textarea class="comentario" name="comentario" id="" cols="30" rows="10"></textarea>
-        <br><br>
-        <label for="">Agrega una archivo </label>
-        <br><br>
-        <input type="file" name="archivo" multiple>
+        <textarea class="comentario" name="comentario" cols="30" rows="10"></textarea>
+        <br>
+        <label for="">Agrega una archivo</label>
+        <br>
+        <input class="archivo" type="file" name="archivo" multiple>
         <br>
         <button class="boton1">Enviar</button>
     </form>
+<script src="./js/formulario.js"></script>
 </section>

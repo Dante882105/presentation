@@ -1,25 +1,39 @@
+body{
+    background-image: url(/Imagenes/body.jpg);
+    background-position: center;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: 70% 80%;
+    width: 70%;
+    height: 100%;
+    margin: -15% 15% -20% 15%;
+    border-radius: 12px;
+    position:relative;
+    padding-top: 2%;
+}
 #ingeniero{
     box-sizing: border-box;
-    height: 400px;
-    width: 40%;
+    height: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
     padding: 10px 90px 10px 90px;
     overflow: auto;
 }
-
 #ingeniero h2 {
     text-align: center;
 }
-
 #ingeniro h2, p{
     display: flex;
     justify-content: center;
     text-align: justify;
     padding: 2px 4px;
 }
-
+.ingeniero{
+    margin: 2% 15%;
+}
 @media (max-width:1024px){
     #ingeniero{
         display: block;
@@ -33,7 +47,6 @@
         overflow: auto;
     }
 }
-
 @media (max-width:768px){
     #ingeniero{
         display: block;
@@ -47,7 +60,6 @@
     overflow: auto;
     }
 }
-
 @media (max-width:425px){
     #ingeniero{
         display: block;
@@ -63,5 +75,16 @@
     #ingeniro h2 p{
         text-align: justify;
         font-size: 10px;
+    }
+
+    main{
+        background-color: rgba(15, 15, 15, 0.8);
+        background-size: 70% 80%;
+        width: 90%;
+        height: 50%;
+        margin: -5% 2% -5% 2%;
+        border-radius: 12px;
+        position:static;
+        padding-top: 2%;
     }
 }
