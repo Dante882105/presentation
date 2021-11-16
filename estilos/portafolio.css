@@ -1,3 +1,14 @@
+#contenedor{
+    background-color: rgba(15, 15, 15, 0.836);
+    background-size: 70% 80%;
+    width: 70%;
+    height: 550px;
+    margin: -15% 15% -12% 15%;
+    border-radius: 12px;
+    position:relative;
+    padding-top: 2%;
+}
+
 .portafolio{
     height: 80%;
     width: 70%;
@@ -26,19 +37,46 @@
     width: 200px;
     height: 150px;
 }
+.desarrollador>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;   
+}
+.desarrollador>ul>li{
+    margin-left: 14px;
+}
+.css{
+    color: blue;
+}
+.html{
+    color: orangered;
+}
+.js{
+    color: yellow;
+}
 @media(max-width:425px){
-
+    #contenedor{
+        position:static;
+    }
+    .portafolio{
+        height: 80%;
+        width: 70%;
+        margin: auto 12%;
+    }
     .portafolio .muestra{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto -36px;
+        margin: auto -0;
+        padding: 0;
     }
     .portafolio .proyecto div{
         width: 200px;
         height: 200px;
-        margin-left: 15px;
+        margin-left: 0;
+    }
+    .muestra>.proyecto{
+        margin: 0;
     }
     
-
 }

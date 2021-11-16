@@ -8,6 +8,7 @@
     position:relative;
     padding-top: 2%;
 }
+
 #formulario{
     display: flex;
     flex-direction: column;
@@ -16,6 +17,9 @@
     width: 40%;
     height: 300px;
     margin: 20% auto auto auto;
+}
+label{
+    color: beige;
 }
 input{
     color: black;

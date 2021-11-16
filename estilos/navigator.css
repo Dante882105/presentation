@@ -1,7 +1,10 @@
 *{
-    color: beige;
     font-family: 'Fjalla One', sans-serif;
 }
+h1,p,strong,h2,h3,h4,a,li{
+    color: beige;
+}
+
 header{
     background-image: url(/Imagenes/Noche.jpg);
     background-size: 90% 100%;
@@ -12,6 +15,7 @@ header{
 }
 #hamburguer{
     display: none;
+    color: beige;
 }
 header .title{
     height: 200px;
