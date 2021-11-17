@@ -11,15 +11,11 @@ header{
     background-repeat: no-repeat;
     background-position: bottom;
     position:static;
-    height: 550px;
+    height: 450px;
 }
 #hamburguer{
     display: none;
     color: beige;
-}
-header .title{
-    height: 200px;
-    padding: 1% auto 2% auto;
 }
 header h1{
     font-family: 'Fjalla One', sans-serif;
@@ -41,13 +37,13 @@ header #navegator ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: -6% 20% auto 20%;
+    margin: -3% 20% auto 20%;
     padding: 0;
 }
 header ul li{
     text-align: center;
     margin-top: 0;
-    padding-top: 90px;
+    padding-top: 40px;
     height: 100px;
     width: 120px;
 }

@@ -2,45 +2,68 @@
     background-color: rgba(15, 15, 15, 0.836);
     background-size: 70% 80%;
     width: 70%;
-    height: 550px;
-    margin: -15% 15% -12% 15%;
+    height: 650px;
+    margin: -8% 15% -18% 15%;
     border-radius: 12px;
     position:relative;
     padding-top: 2%;
 }
-
 .portafolio{
     height: 80%;
     width: 70%;
     margin: auto 14.5%;
 }
-.portafolio>.muestra{
+.muestra{
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 5% 50% 5% 50%;
+    margin: 8% 10%;
+    padding: 0;
 }
 .portafolio>h2{
     text-align: center;
+    margin: 10% 5%;
 }
 .portafolio .muestra .proyecto{
     list-style: none;
+    text-align: center;
 }
-.portafolio .proyecto div{
-    width: 300px;
-    height: 300px;
+.muestra>div{
+    width: 270px;
+    height: 270px;
 }
-.portafolio div h1{
+.portafolio>h1{
     font-size: 20px;
 }
 .portafolio div img{
     width: 200px;
-    height: 150px;
+    height: 200px;
+}
+.title{
+    height: 30px;
+    padding: 1%;
+    margin-top: 5%;
+}
+.proyecto{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: 10px 10px;
+}
+.proyecto>a{
+    width: 200px;
+    height: 200px;
+    margin: 18px;
 }
 .desarrollador>ul{
     display: flex;
     flex-direction: row;
-    list-style: none;   
+    justify-content: center;
+    list-style: none;
+    margin: 10px auto auto -50px;
 }
 .desarrollador>ul>li{
     margin-left: 14px;
@@ -53,6 +76,14 @@
 }
 .js{
     color: yellow;
+}
+@media(max-width:1024px){
+    .muestra{
+        height: 250px;
+        width: 250px;
+        margin: 15% 7%;
+        padding: 0;
+    }
 }
 @media(max-width:425px){
     #contenedor{
