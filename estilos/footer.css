@@ -10,25 +10,28 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: none;
 }
 footer ul li{
     margin: 22% 5% 0% 2%;
-    padding: none;
 }
 .hidden{
     display: none;
 }
 @media (max-width: 425px){
     footer{
-        height: 100px;
+        height: 80px;
         background-image: url(/Imagenes/footer.jpg);
         background-size:auto;
         background-repeat: no-repeat;
         background-position: center;
     }
 
-    footer ul li{
+    footer>ul{
         font-size: 12px;
+        margin: -10px 0 0 0;
+        padding: none;
+    }
+    footer>ul>li{
+        margin: 56px 10px 0 5px;
     }
 }

@@ -1,0 +1,14 @@
+#contenedor{
+    background-color: rgba(15, 15, 15, 0.836);
+    background-size: 70% 80%;
+    width: 70%;
+    height: 650px;
+    margin: -5% 15% -18% 15%;
+    border-radius: 12px;
+    position:relative;
+    padding-top: 2%;
+}
+
+#mapa{
+    text-align: center;
+}
