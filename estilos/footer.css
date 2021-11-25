@@ -1,5 +1,5 @@
 footer{
-    height: 340px;
+    height: 220px;
     background-image: url(/Imagenes/footer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,14 +12,14 @@ footer ul{
     justify-content: center;
 }
 footer ul li{
-    margin: 22% 5% 0% 2%;
+    margin: 12% 5% 0% 2%;
 }
 .hidden{
     display: none;
 }
 @media (max-width: 425px){
     footer{
-        height: 80px;
+        height: 60px;
         background-image: url(/Imagenes/footer.jpg);
         background-size:auto;
         background-repeat: no-repeat;
@@ -27,11 +27,11 @@ footer ul li{
     }
 
     footer>ul{
-        font-size: 12px;
+        font-size: 10px;
         margin: -10px 0 0 0;
         padding: none;
     }
     footer>ul>li{
-        margin: 56px 10px 0 5px;
+        margin: 40px 10px 0 5px;
     }
 }

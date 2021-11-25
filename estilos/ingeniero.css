@@ -7,7 +7,7 @@ main{
     background-size: 70% 80%;
     width: 70%;
     height: 100%;
-    margin: -7% 15% -20% 15%;
+    margin: -7% 15% -9% 15%;
     border-radius: 12px;
     position:relative;
     padding-top: 2%;
@@ -30,6 +30,7 @@ main{
     justify-content: center;
     text-align: justify;
     padding: 2px 4px;
+    margin-top: -20px;
 }
 .ingeniero{
     margin: 2% 15%;
@@ -82,9 +83,12 @@ main{
         background-size: 70% 80%;
         width: 90%;
         height: 50%;
-        margin: -5% 2% -5% 2%;
+        margin: -5% 2% 3% 2%;
         border-radius: 12px;
         position:static;
         padding-top: 2%;
+    }
+    #ingeniro h2, p{
+        margin-top: 10px;
     }
 }

@@ -1,75 +1,37 @@
-#contenedor{
-    background-color: rgba(15, 15, 15, 0.836);
-    background-size: 70% 80%;
-    width: 70%;
-    height: 650px;
-    margin: -8% 15% -18% 15%;
-    border-radius: 12px;
-    position:relative;
-    padding-top: 2%;
-}
 .portafolio{
-    height: 80%;
-    width: 70%;
-    margin: auto 14.5%;
-}
-.muestra{
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    margin: 8% 10%;
-    padding: 0;
-}
-.portafolio>h2{
-    text-align: center;
-    margin: 10% 5%;
-}
-.portafolio .muestra .proyecto{
-    list-style: none;
-    text-align: center;
-}
-.muestra>div{
-    width: 270px;
-    height: 270px;
-}
-.portafolio>h1{
-    font-size: 20px;
-}
-.portafolio div img{
-    width: 200px;
-    height: 200px;
-}
-.title{
-    height: 30px;
-    padding: 1%;
-    margin-top: 5%;
-}
-.proyecto{
-    height: 250px;
-    width: 250px;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    margin: 10px 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    margin: -4% auto -8% auto;
 }
-.proyecto>a{
-    width: 200px;
-    height: 200px;
-    margin: 18px;
-}
-.desarrollador>ul{
+.muestra{
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    margin: 10px auto auto -50px;
 }
-.desarrollador>ul>li{
-    margin-left: 14px;
+.proyecto{
+    margin: 20px;
+}
+.proyecto img{
+    height: 200px;
+    width: 200px;
+}
+.tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.tools>li{
+    margin: 18px;
 }
 .css{
-    color: blue;
+    color: royalblue;
 }
 .html{
     color: orangered;
@@ -77,37 +39,18 @@
 .js{
     color: yellow;
 }
-@media(max-width:1024px){
-    .muestra{
-        height: 250px;
-        width: 250px;
-        margin: 15% 7%;
-        padding: 0;
-    }
-}
 @media(max-width:425px){
-    #contenedor{
-        position:static;
-    }
-    .portafolio{
-        height: 80%;
-        width: 70%;
-        margin: auto 12%;
-    }
-    .portafolio .muestra{
+    .muestra {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto -0;
+        list-style: none;
         padding: 0;
     }
-    .portafolio .proyecto div{
-        width: 200px;
-        height: 200px;
-        margin-left: 0;
-    }
-    .muestra>.proyecto{
+    .proyecto{
         margin: 0;
     }
-    
+    .portafolio{
+        margin: 10% auto 6% auto;
+    }
 }

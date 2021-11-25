@@ -92,7 +92,7 @@
         grid-row: 2;
         text-align: justify;
         padding: 4px 8px;
-        margin:0px;
+        margin:2px;
     }
 }
 
@@ -116,7 +116,7 @@
     width: 80%;
     }
     .img1>p, .img2>p, .img3>p{
-        font-size: 16px;
+        font-size: 12px;
         width: 100%;
         text-align: justify;
         padding: 0;

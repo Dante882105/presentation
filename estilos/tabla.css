@@ -1,0 +1,42 @@
+#experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: -6% auto -10% auto;
+    height: 600px;
+}
+.tabla{
+    color: whitesmoke;
+    border: 2px solid goldenrod;
+    padding: 18px;
+}
+
+.tabla th{
+    font-size: 20px;
+}
+
+.tabla th, td{
+    border: 2px solid goldenrod;
+}
+
+.tabla td{
+    font-size: 15px;
+}
+@media (max-width:425px){
+    .tabla th{
+        font-size: 11px;
+    }
+    
+    .tabla th, td{
+        border: 2px solid goldenrod;
+    }
+    
+    .tabla td{
+        font-size: 8px;
+    }
+    #experiencia{
+        margin: -5% auto 6% auto;
+        height: 310px;
+    }
+}

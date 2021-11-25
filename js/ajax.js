@@ -1,4 +1,4 @@
-export function contact () {
+export function contact() {
     const AJAX = new Promise((resolve, reject) =>{
         let xhr = new XMLHttpRequest();
         xhr.open("GET", "contactame.html");
@@ -50,5 +50,23 @@ export function mapa() {
     AJAX.then (res =>{
         contenedor.innerHTML = res;
     })
-    AJAX.catch(err => alert (err));
+    AJAX.catch(err => alert(err));
+}
+export function experiencia() {
+    const AJAX = new Promise((resolve, reject) =>{
+        let xhr = new XMLHttpRequest();
+        xhr.open("GET", "experiencia.html");
+        xhr.addEventListener("load", (e)=>{
+            if (xhr.status == 200) {
+                resolve(e.target.response);
+            } else {
+                reject("Estamos presentando un inconveniente, porfavor intentalo más tarde")
+            }
+        })
+        xhr.send();
+    })
+    AJAX.then (res =>{
+        contenedor.innerHTML = res;
+    });
+    AJAX.catch (err => alert(err));
 }

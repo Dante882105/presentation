@@ -2,13 +2,27 @@
     background-color: rgba(15, 15, 15, 0.836);
     background-size: 70% 80%;
     width: 70%;
-    height: 650px;
-    margin: -5% 15% -18% 15%;
+    height: 100%;
+    margin: -8% 15% -3% 15%;
     border-radius: 12px;
-    position:relative;
+    position: relative;
     padding-top: 2%;
 }
-
 #mapa{
     text-align: center;
+    margin: 4% auto -9% auto;
+    height: 600px;
+}
+@media (max-width:425px){
+    #mapa{
+        margin: -1% auto 5% auto;
+        height: 315px;
+    }
+    .mapa{
+        height: 225px;
+        margin: 40px auto;
+    }
+    #contenedor{
+        position: static;
+    }
 }

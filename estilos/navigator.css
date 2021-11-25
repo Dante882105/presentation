@@ -4,7 +4,9 @@
 h1,p,strong,h2,h3,h4,a,li{
     color: beige;
 }
-
+h1,h2,h3{
+    text-align: center;
+}
 header{
     background-image: url(/Imagenes/Noche.jpg);
     background-size: 90% 100%;
@@ -23,6 +25,7 @@ header h1{
     font-size: 45px;
     box-sizing: border-box;
     text-align: center;
+    margin-top: 0px;
 }
 header>p{
     box-sizing: border-box;
@@ -33,7 +36,7 @@ header #navegator ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: -3% 20% auto 20%;
+    margin: -3% 15% auto 15%;
     padding: 0;
 }
 header ul li{
@@ -54,12 +57,58 @@ header ul a{
     height: 150px;
 }
 
+.contact{
+    list-style: none;
+    color: gray;
+    padding: 13px 10px;
+}
+
+.whatsapp, .telegram, .twitter{
+    height: 86px;
+    padding: 0px;
+    margin: inherit;
+}
+
+.redes{
+    position: fixed;
+    left: 95%;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 110px
+}
+
+.one{
+    position: fixed;
+    left: 84%;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 180px
+}
+
+.msj{
+    width: 30px;
+    background-color: red;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+#whatsapp, #telegram, #twitter{
+    font-size: 30px;
+}
+
 @media(max-width:425px){
     h1, h2, h3{
         font-size: 15px;
+        margin-bottom: 2px;
     }
     p {
-        font-size: 14px;
+        font-size: 12px;
     }
     header{
         height: 200px;
@@ -77,6 +126,7 @@ header ul a{
         font-family: 'Lobster', cursive;
         font-size: 45px;
         text-align: center;
+        margin-top: 30px;
     }
     .icon a{
         font-size: 20px;
@@ -118,8 +168,63 @@ header ul a{
         width: 120%;
         margin-top: 0px;
     }
+    #redes{
+        left: 78%;
+    }
+    .contact{
+        list-style: none;
+        color: gray;
+        padding: 0px;
+        margin: auto -20px;
+    }
+    
+    .whatsapp, .telegram, .twitter{
+        height: 86px;
+        padding: 0px;
+        margin: inherit;
+    }
+    
+    .redes{
+        left: 87%;
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: 110px;
+        position: fixed;
+    }
+    
+    .one{
+        left: 76%;
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: 180px
+    }
+    
+    .msj{
+        width: 30px;
+        background-color: red;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    
+    #whatsapp, #telegram, #twitter{
+        font-size: 30px;
+    }
 }
 .signal{
     background-color: red;
     clip-path: polygon(0% 0%, 100% 0, 100% 79%, 49% 100%, 0 79%);
+}
+@media(max-width:320px){
+    .redes{
+        left: 85%;
+    }
+    .one{
+        left: 69%;
+    }
 }

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="/estilos/portafolio.css">
     <link rel="icon" href="/Imagenes/D.jpg">
+    <link rel="stylesheet" href="/estilos/contactame.css">
     <link rel="stylesheet" href="/estilos/navigator.css">
     <link rel="stylesheet" href="/estilos/ingeniero.css">
     <link rel="stylesheet" href="/estilos/galery.css">
@@ -14,28 +16,39 @@
     <link rel="stylesheet" href="/estilos/mapa.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/tabla.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/007d3fe8b9.js" crossorigin="anonymous"></script>
 </head>
 <body> 
     <header>
-            <nav id="navegator">
+        <nav id="navegator">
             <i class="fas fa-bars" id="hamburguer"></i>
                 <ul class="enlaces-menu">
                     <li id="home"><a href="#">Acerca de mí</a></li>
                     <li id="contactame"><a href="#/contactame">Contáctame</a></li>
-                    <li class="icon" id="mapa"><a href=""><i class="fas fa-map-marker-alt"></i></a></li>
-                    <li id="profession"><a href="">¿Cuál es mi profesión?</a></li>
+                    <li class="icon" id="map"><a href=""><i class="fas fa-map-marker-alt"></i></a></li>
+                    <li id="trabajo"><a href="">Experiencia Laboral</a></li>
                     <li id="portafolio"><a href="#/portafolio">Portafolio</a></li>
                 </ul>
-            </nav>
-            <div class="saludo">
+        </nav>
+        <div class="saludo">
                 <h1>¡Hola yo soy!<br>Daniel Bernal J.</h1>
                 <p>Ingeniero Industrial y Desarrollador Web Full Stack</p>
-            </div>
+        </div>
+        <div class="redes">
+            <h2 class="msj">Escríbeme</h2>
+            <ul class="contact hidden">
+                <li class="whatsapp">
+                    <a id="whatsapp" href="https://wa.me/573182251168?text=Me%20interesa%20conocer%20tu%20trabajo" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+                </li>
+                <li class="telegram">
+                    <a id="telegram" href=""><i class="fab fa-telegram"></i></a>
+                </li>
+            </ul>
+        </div>
     </header>
-    <div class="fondo"></div>
     <div id="contenedor" class="hidden"></div>
     <main>
             <div class="ingeniero">

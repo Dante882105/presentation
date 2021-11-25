@@ -1,5 +1,5 @@
-import { contact, mapa } from "./ajax.js";
-import { creaciones } from "./ajax.js";
+import { contact, mapa, creaciones, experiencia } from "./ajax.js";
+// import { creaciones } from "./ajax.js";
 let contenedor = document.getElementById("contenedor");
 let main = document.querySelector("main");
 let contactame = document.getElementById("contactame");
@@ -12,7 +12,6 @@ contactame.addEventListener("click", (e) => {
     enlaces.classList.toggle("activado");
 });
 let home = document.getElementById("home");
-let profession = document.getElementById("profession");
 home.addEventListener("click", (e)=>{
     e.preventDefault();
     main.className = "";
@@ -20,10 +19,12 @@ home.addEventListener("click", (e)=>{
     nav.classList.toggle("activo");
     enlaces.classList.toggle("activado");
 });
-profession.addEventListener("click", (e)=>{
+let trabajo = document.getElementById("trabajo");
+trabajo.addEventListener("click", (e)=>{
     e.preventDefault();
-    main.className = "";
-    contenedor.className = "hidden";
+    main.className = "hidden";
+    contenedor.className = "";
+    experiencia();
     nav.classList.toggle("activo");
     enlaces.classList.toggle("activado");
 });
@@ -36,7 +37,7 @@ portafolio.addEventListener("click", (e) => {
     nav.classList.toggle("activo");
     enlaces.classList.toggle("activado");
 });
-let barrio = document.getElementById("mapa");
+let barrio = document.getElementById("map");
 barrio.addEventListener("click", (e) =>{
     e.preventDefault();
     main.className = "hidden";
@@ -44,6 +45,15 @@ barrio.addEventListener("click", (e) =>{
     mapa();
     nav.classList.toggle("activo");
     enlaces.classList.toggle("activado");
+})
+//Contactar con redes sociales
+const list = document.querySelector(".contact");
+const redes = document.querySelector(".redes");
+const msj = document.querySelector(".msj");
+msj.addEventListener("mouseover", (e)=>{
+    e.preventDefault();
+    list.classList.toggle("hidden");
+    redes.classList.toggle("one");
 })
 //menú hamburguesa
 let nav = document.querySelector("nav");
