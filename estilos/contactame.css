@@ -58,6 +58,13 @@ input{
     }
 
 }
+@media(max-width: 375px) {
+    #formulario{
+        width: 70%;
+        height: 780px;
+        margin: 3% auto 5   % auto;
+    }
+}
 .formulario__incorrecto>input{
     color: red;
     border: 1px solid darkred;
