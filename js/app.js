@@ -47,13 +47,30 @@ barrio.addEventListener("click", (e) =>{
     enlaces.classList.toggle("activado");
 })
 //Contactar con redes sociales
-const list = document.querySelector(".contact");
+const fragment = document.createDocumentFragment();
+let ul = document.createElement("ul")
+ul.className = "contact";
+let whatsapp = document.createElement("li");
+whatsapp.id = "whatsapp";
+whatsapp.innerHTML='<a id="whatsapp" href="https://wa.me/573182251168?text=Me%20interesa%20conocer%20tu%20trabajo" target="_blank"><i class="fab fa-whatsapp-square"></i></a>';
+let telegram = document.createElement("li");
+telegram.id = "telegram";
+telegram.innerHTML='<a id="telegram" href=""><i class="fab fa-telegram"></i></a>';
+
 const redes = document.querySelector(".redes");
 const msj = document.querySelector(".msj");
-msj.addEventListener("mouseover", (e)=>{
+redes.addEventListener("mouseenter", (e)=>{
     e.preventDefault();
-    list.classList.toggle("hidden");
-    redes.classList.toggle("one");
+    redes.classList.add("one");
+    ul.appendChild(whatsapp);
+    ul.appendChild(telegram);
+    fragment.appendChild(ul);
+    redes.appendChild(fragment);
+})
+redes.addEventListener("mouseleave", (e)=>{
+    e.preventDefault();
+    redes.classList.remove("one");
+    ul.remove();
 })
 //menú hamburguesa
 let nav = document.querySelector("nav");

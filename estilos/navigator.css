@@ -60,13 +60,13 @@ header ul a{
 .contact{
     list-style: none;
     color: gray;
-    padding: 13px 10px;
+    padding: 45px 13px;
 }
 
-.whatsapp, .telegram, .twitter{
+.whatsapp, .telegram{
     height: 86px;
     padding: 0px;
-    margin: inherit;
+    margin-left: -50px;
 }
 
 .redes{
@@ -80,7 +80,7 @@ header ul a{
 
 .one{
     position: fixed;
-    left: 84%;
+    left: 89%;
     display: flex;
     flex-direction: row;
     height: 250px;
@@ -100,6 +100,8 @@ header ul a{
 
 #whatsapp, #telegram, #twitter{
     font-size: 30px;
+    padding: 0;
+    text-align: left;
 }
 
 @media(max-width:425px){
@@ -185,7 +187,7 @@ header ul a{
     }
     
     .redes{
-        left: 83%;
+        left: 88%;
         display: flex;
         flex-direction: row;
         height: 300px;
@@ -214,6 +216,9 @@ header ul a{
     
     #whatsapp, #telegram, #twitter{
         font-size: 30px;
+        margin: 15%;
+        width: 68px;
+        height: 71px;
     }
 }
 .signal{
