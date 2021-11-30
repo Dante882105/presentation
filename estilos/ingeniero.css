@@ -49,8 +49,12 @@ main{
     }
 }
 @media (max-width:768px){
+    main{
+        margin: -11% 5% -10% 5%;
+        width: 90%;
+    }
     #ingeniero{
-        display: block;
+    display: block;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;

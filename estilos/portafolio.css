@@ -40,6 +40,21 @@
 .js{
     color: yellow;
 }
+@media(max-width:768px){
+    .muestra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    .proyecto{
+        margin: 0;
+    }
+    .portafolio{
+        margin: 4% auto 3% auto;
+    }
+}
 @media(max-width:425px){
     .muestra {
         display: flex;

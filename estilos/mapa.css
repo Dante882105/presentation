@@ -13,6 +13,19 @@
     margin: 4% auto -9% auto;
     height: 600px;
 }
+@media (max-width:768px){
+    #mapa{
+        margin: -1% auto 5% auto;
+        height: 100%;
+    }
+    .mapa{
+        height: 650px;
+        margin: 40px auto;
+    }
+    #contenedor{
+        position: static;
+    }
+}
 @media (max-width:425px){
     #mapa{
         margin: -1% auto 5% auto;

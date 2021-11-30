@@ -17,6 +17,21 @@ footer ul li{
 .hidden{
     display: none;
 }
+@media (max-width: 768px){
+    footer{
+        height: 100px;
+        width: 100%;
+        margin: -5% auto;
+    }
+    footer>ul{
+        font-size: 10px;
+        margin: -10px 0 0 0;
+        padding: none;
+    }
+    footer>ul>li{
+        margin: 40px 10px 0 5px;
+    }
+}
 @media (max-width: 425px){
     footer{
         height: 60px;
