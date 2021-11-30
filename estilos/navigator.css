@@ -74,34 +74,35 @@ header ul a{
     left: 95%;
     display: flex;
     flex-direction: row;
-    height: 250px;
+    height: 330px;
     width: 110px
 }
 
 .one{
     position: fixed;
-    left: 89%;
+    left: 93%;
     display: flex;
     flex-direction: row;
-    height: 250px;
-    width: 180px
+    height: 330px;
+    width: 100px
 }
 
 .msj{
     width: 30px;
+    height: 80%;
     background-color: red;
     writing-mode: vertical-lr;
     text-orientation: upright;
     vertical-align: middle;
     text-align: center;
-    font-size: 15px;
-    padding-left: 5px;
+    margin: auto;
+    font-size: 14px;
 }
-
-#whatsapp, #telegram, #twitter{
+#whatsapp, #telegram{
     font-size: 30px;
-    padding: 0;
+    padding-top: 15%;
     text-align: left;
+    margin: auto;
 }
 
 @media(max-width:425px){
@@ -176,7 +177,7 @@ header ul a{
     .contact{
         list-style: none;
         color: gray;
-        padding: 0px;
+        padding: 5px;
         margin: auto -20px;
     }
     
@@ -187,7 +188,7 @@ header ul a{
     }
     
     .redes{
-        left: 88%;
+        left: 93%;
         display: flex;
         flex-direction: row;
         height: 300px;
@@ -196,7 +197,7 @@ header ul a{
     }
     
     .one{
-        left: 72%;
+        left: 86%;
         display: flex;
         flex-direction: row;
         height: 300px;
@@ -204,14 +205,14 @@ header ul a{
     }
     
     .msj{
-        width: 30px;
+        width: 26px;
         background-color: red;
         writing-mode: vertical-lr;
         text-orientation: upright;
         vertical-align: middle;
         text-align: center;
-        font-size: 15px;
-        padding-left: 5px;
+        font-size: 12px;
+        margin: 0;
     }
     
     #whatsapp, #telegram, #twitter{
@@ -227,10 +228,10 @@ header ul a{
 }
 @media(max-width:375px){
     .redes{
-        left: 85%;
+        left: 92%;
     }
     .one{
-        left: 69%;
+        left: 82%;
     }
     header h1{
         font-size: 30px;

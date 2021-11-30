@@ -4,7 +4,8 @@
     justify-content: center;
     text-align: center;
     margin: -6% auto -10% auto;
-    height: 600px;
+    height: 100%;
+    padding: 5%
 }
 .tabla{
     color: whitesmoke;
@@ -37,6 +38,6 @@
     }
     #experiencia{
         margin: -5% auto 6% auto;
-        height: 310px;
+        height: 100%;
     }
 }

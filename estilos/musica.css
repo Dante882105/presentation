@@ -31,7 +31,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 2% 5%;
+        margin: auto;
         padding: 0px;
     }
     #musica h3{

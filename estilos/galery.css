@@ -108,11 +108,11 @@
         font-size: 14px;
     }
     #galeria>.img1, #galeria>.img2, #galeria>.img3{
-    margin: 0;
+    margin: auto;
     border: none;
     display: flex;
     flex-direction: column;
-    padding: 12px 36px;
+    padding: 0;
     height: 20%;
     width: 80%;
     }
