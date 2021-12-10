@@ -21,7 +21,7 @@ footer ul li{
     footer{
         height: 100px;
         width: 100%;
-        margin: -5% auto;
+        margin: 5% auto -5% auto;
     }
     footer>ul{
         font-size: 10px;
