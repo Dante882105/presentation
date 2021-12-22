@@ -1,4 +1,4 @@
-#experiencia{
+#experiencias{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@
     .tabla td{
         font-size: 8px;
     }
-    #experiencia{
+    #experiencias{
         margin: -5% auto 6% auto;
         height: 100%;
     }

@@ -51,10 +51,6 @@ const EXPRESIONES = {
 let formulario = document.getElementById("form");
 let inputs = document.querySelectorAll("#form input");
 
-formulario.addEventListener("submit", (e)=>{ 
-    e.preventDefault();
-})
-
 inputs.forEach((input)=>{
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);

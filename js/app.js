@@ -1,51 +1,23 @@
-import { contact, mapa, creaciones, experiencia } from "./ajax.js";
-// import { creaciones } from "./ajax.js";
+import { ajax } from "./ajax.js";
+let options = document.querySelectorAll(".options");
 let contenedor = document.getElementById("contenedor");
 let main = document.querySelector("main");
-let contactame = document.getElementById("contactame");
-contactame.addEventListener("click", (e) => {
-    e.preventDefault();
-    main.className = "hidden";
-    contenedor.className = "";
-    contact();
-    nav.classList.toggle("activo");
-    enlaces.classList.toggle("activado");
-});
 let home = document.getElementById("home");
-home.addEventListener("click", (e)=>{
-    e.preventDefault();
+home.addEventListener("click",()=>{
     main.className = "";
     contenedor.className = "hidden";
-    nav.classList.toggle("activo");
-    enlaces.classList.toggle("activado");
-});
-let trabajo = document.getElementById("trabajo");
-trabajo.addEventListener("click", (e)=>{
-    e.preventDefault();
-    main.className = "hidden";
-    contenedor.className = "";
-    experiencia();
-    nav.classList.toggle("activo");
-    enlaces.classList.toggle("activado");
-});
-let portafolio = document.getElementById("portafolio");
-portafolio.addEventListener("click", (e) => {
-    e.preventDefault();
-    main.className = "hidden";
-    contenedor.className = "";
-    creaciones();
-    nav.classList.toggle("activo");
-    enlaces.classList.toggle("activado");
-});
-let barrio = document.getElementById("map");
-barrio.addEventListener("click", (e) =>{
-    e.preventDefault();
-    main.className = "hidden";
-    contenedor.className = "";
-    mapa();
-    nav.classList.toggle("activo");
-    enlaces.classList.toggle("activado");
 })
+for (let i = 0; i < options.length; i++) {
+    options[i].addEventListener("click", router);
+}
+function router(e) {
+    e.preventDefault();
+    main.className = "hidden";
+    contenedor.className = "";
+    ajax(e.target.id + '.html');
+    nav.classList.toggle("activo");
+    enlaces.classList.toggle("activado");
+}
 //Contactar con redes sociales
 const fragment = document.createDocumentFragment();
 let ul = document.createElement("ul")

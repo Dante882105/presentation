@@ -8,13 +8,13 @@
     position: relative;
     padding-top: 2%;
 }
-#mapa{
+#mapas{
     text-align: center;
     margin: 4% auto -9% auto;
     height: 600px;
 }
 @media (max-width:768px){
-    #mapa{
+    #mapas{
         margin: -1% auto 5% auto;
         height: 100%;
     }
@@ -27,7 +27,7 @@
     }
 }
 @media (max-width:425px){
-    #mapa{
+    #mapas{
         margin: -1% auto 5% auto;
         height: 315px;
     }

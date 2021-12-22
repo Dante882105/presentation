@@ -1,7 +1,7 @@
-export function contact() {
+export function ajax(url) {
     const AJAX = new Promise((resolve, reject) =>{
         let xhr = new XMLHttpRequest();
-        xhr.open("GET", "contactame.html");
+        xhr.open("GET", url);
         xhr.addEventListener("load", (e)=>{
             if (xhr.status == 200) {
                 resolve(e.target.response);
