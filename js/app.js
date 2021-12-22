@@ -55,10 +55,10 @@ hamburguer.addEventListener("click",(e)=>{
 //animación en menú
 const menu = document.querySelectorAll("nav ul li");
 menu.forEach((e)=>{
-    e.addEventListener("mouseover", function(e) {
+    e.addEventListener("mouseenter", (e)=>{
         e.target.classList.add("signal");
-        setTimeout(() => {
-            e.target.classList.remove("signal");
-        }, 1000);
-    },false)
+    })
+    e.addEventListener("mouseleave", (e)=>{
+        e.target.classList.remove("signal");
+    })
 })
